@@ -14,8 +14,24 @@ namespace Auto_David_Haller
         public Form1()
         {
             InitializeComponent();
+           
         }
-        class Auto;
+        
+        class Auto
+        {
+           public string Automarke;
+           public string Auofarbe;
+           public int PS;
+
+            public void Marke()
+            {
+                
+            }
+            public void Informationen()
+            {
+            }
+
+        }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {

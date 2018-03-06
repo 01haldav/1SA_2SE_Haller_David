@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.Marke = new System.Windows.Forms.TextBox();
+            this.PS = new System.Windows.Forms.TextBox();
+            this.Tankgröße = new System.Windows.Forms.TextBox();
+            this.Verbrauch = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -49,36 +49,37 @@
             this.label10 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label11 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // Marke
             // 
-            this.textBox1.Location = new System.Drawing.Point(63, 31);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.Marke.Location = new System.Drawing.Point(63, 31);
+            this.Marke.Name = "Marke";
+            this.Marke.Size = new System.Drawing.Size(100, 20);
+            this.Marke.TabIndex = 0;
+            this.Marke.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // PS
             // 
-            this.textBox2.Location = new System.Drawing.Point(63, 102);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
+            this.PS.Location = new System.Drawing.Point(63, 102);
+            this.PS.Name = "PS";
+            this.PS.Size = new System.Drawing.Size(100, 20);
+            this.PS.TabIndex = 1;
             // 
-            // textBox3
+            // Tankgröße
             // 
-            this.textBox3.Location = new System.Drawing.Point(244, 31);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 2;
+            this.Tankgröße.Location = new System.Drawing.Point(244, 31);
+            this.Tankgröße.Name = "Tankgröße";
+            this.Tankgröße.Size = new System.Drawing.Size(100, 20);
+            this.Tankgröße.TabIndex = 2;
             // 
-            // textBox4
+            // Verbrauch
             // 
-            this.textBox4.Location = new System.Drawing.Point(244, 66);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 3;
+            this.Verbrauch.Location = new System.Drawing.Point(244, 66);
+            this.Verbrauch.Name = "Verbrauch";
+            this.Verbrauch.Size = new System.Drawing.Size(100, 20);
+            this.Verbrauch.TabIndex = 3;
             // 
             // textBox5
             // 
@@ -233,11 +234,21 @@
             this.label11.TabIndex = 20;
             this.label11.Text = "Informationen";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(380, 161);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(53, 26);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "info";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(456, 352);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label10);
@@ -255,10 +266,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Verbrauch);
+            this.Controls.Add(this.Tankgröße);
+            this.Controls.Add(this.PS);
+            this.Controls.Add(this.Marke);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -268,10 +279,10 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox Marke;
+        private System.Windows.Forms.TextBox PS;
+        private System.Windows.Forms.TextBox Tankgröße;
+        private System.Windows.Forms.TextBox Verbrauch;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
@@ -289,6 +300,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button button1;
     }
 }
 
