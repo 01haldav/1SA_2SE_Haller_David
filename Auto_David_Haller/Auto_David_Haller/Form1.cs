@@ -14,24 +14,25 @@ namespace Auto_David_Haller
         public Form1()
         {
             InitializeComponent();
+
            
         }
         
         class Auto
         {
            public string Automarke;
-           public string Auofarbe;
+           
            public int PS;
 
-            public void Marke()
+           
+            public void Info()
             {
                 
+                
             }
-            public void Informationen()
-            {
-            }
+           }
 
-        }
+       
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -42,5 +43,12 @@ namespace Auto_David_Haller
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            groupBox1.Text = Marke.Text;
+            groupBox1.Text += comboBox1.SelectedItem;
+            }
+    
     }
 }
