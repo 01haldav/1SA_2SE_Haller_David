@@ -58,7 +58,7 @@ namespace Auto_David_Haller
             groupBox1.Text += Verbrauch.Text;
             groupBox1.Text += "\nTankinhalt:";
             groupBox1.Text += tanken;
-            groupBox1.Text += "l;
+            groupBox1.Text += "l /n gefahrene km:";
              groupBox1.Text += fahren;
 
             }
